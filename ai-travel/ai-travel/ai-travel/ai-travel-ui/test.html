@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <script type="module">
+    import { createApp, ref } from 'vue'
+    
+    const app = createApp({
+      template: `<div style="text-align:center;padding:100px;">
+        <h1>Vue Test</h1>
+        <p>Vue is working! {{ message }}</p>
+        <button @click="count++">Click me: {{ count }}</button>
+      </div>`,
+      setup() {
+        const message = ref('Hello World!')
+        const count = ref(0)
+        return { message, count }
+      }
+    })
+    
+    app.mount('#app')
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>

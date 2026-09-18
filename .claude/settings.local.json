@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn compile *)",
+      "Bash(java -version)",
+      "Bash(javac -version)",
+      "Bash(./mvnw compile *)",
+      "Bash(curl -L -o /c/Users/15119/Desktop/作业/认识实习/ai-travel/ai-travel/ai-travel/.mvn/wrapper/maven-wrapper.jar https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-wrapper/3.2.0/maven-wrapper-3.2.0.jar)",
+      "Bash(bash ./mvnw compile -DskipTests)",
+      "Bash(xxd)",
+      "Bash(unzip -p .mvn/wrapper/maven-wrapper.jar META-INF/MANIFEST.MF)",
+      "Bash(java -cp \".mvn/wrapper/maven-wrapper.jar\" org.apache.maven.wrapper.MavenWrapperMain compile -DskipTests)",
+      "Bash(curl -I \"https://dlcdn.apache.org/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.zip\")",
+      "Bash(winget install *)",
+      "Bash(curl -sI \"https://dlcdn.apache.org/maven/maven-3/\")",
+      "Bash(curl -sI \"https://archive.apache.org/dist/maven/maven-3/3.9.9/binaries/apache-maven-3.9.9-bin.zip\")",
+      "Bash(curl -s \"https://repo.maven.apache.org/maven2/org/projectlombok/lombok/maven-metadata.xml\")",
+      "WebSearch",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)",
+      "Bash(awk '{print $5}')",
+      "Bash(xargs -I{} taskkill -PID {} -F)"
+    ]
+  }
+}

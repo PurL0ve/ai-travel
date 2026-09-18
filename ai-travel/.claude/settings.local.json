@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash scripts/code-quality-check.sh)",
+      "Bash(grep -v \":0$\")",
+      "Bash(mvn clean *)",
+      "Bash(java -version)",
+      "Bash(awk '{printf \"✓ %-30s %6s\\\\n\", $9, $5}')",
+      "Bash(awk 'NR>0 {printf \"%-35s %8s\\\\n\", $9, $5}')"
+    ]
+  }
+}

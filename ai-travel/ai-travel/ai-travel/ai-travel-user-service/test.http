@@ -1,0 +1,52 @@
+### 测试通过网关访问用户服务 - 注册接口
+POST http://localhost:8090/api/user/register
+Content-Type: application/json
+
+{
+  "username": "testuser2",
+  "password": "123456",
+  "nickname": "Test User 2"
+}
+
+### 测试通过网关访问用户服务 - 登录接口
+POST http://localhost:8090/api/user/login
+Content-Type: application/json
+
+{
+  "username": "testuser2",
+  "password": "123456"
+}
+
+### 直接访问用户服务（不通过网关）- 注册接口
+POST http://localhost:8081/api/user/register
+Content-Type: application/json
+
+{
+  "username": "testuser_direct",
+  "password": "123456",
+  "nickname": "Test User Direct"
+}
+
+### 测试通过网关访问 AI 服务 - 生成旅行计划
+POST http://localhost:8090/api/ai/generate-plan
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "destination": "北京",
+  "days": 3,
+  "budget": "舒适型",
+  "interests": ["历史文化", "美食"]
+}
+
+### 测试通过网关访问订单服务 - 创建订单
+POST http://localhost:8090/api/order/create
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "productId": 1,
+  "quantity": 1,
+  "contactName": "张三",
+  "contactPhone": "13800138000"
+}
